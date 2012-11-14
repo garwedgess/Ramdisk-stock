@@ -1,6 +1,6 @@
 #!/sbin/sh
 # call a userinit.sh script if it's present on the sdcard
-echo "executing 00-userinit" >> /data/local/tmp/log_doom-mods.log
+echo "executing 00-userinit" >> /data/local/tmp/log-mods.log
 
 if [ "$SD_EXT_DIRECTORY" = "" ];
 then
@@ -35,4 +35,4 @@ then
    setprop cm.userinit.active 1;
 fi;
 
-echo "exiting 00-userinit" >> /data/local/tmp/log_doom-mods.log
+echo "exiting 00-userinit" >> /data/local/tmp/log-mods.log
